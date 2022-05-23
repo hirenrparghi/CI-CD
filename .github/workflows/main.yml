@@ -26,10 +26,10 @@ jobs:
           echo $pwd
 
       - name: Upload a Build Artifact
-            uses: actions/upload-artifact@v2.2.1
-            with:
-               name: application
-               path: C:\inetpub\wwwroot\SampleWebApplication
+        uses: actions/upload-artifact@v2.2.1
+        with:
+           name: application
+           path: C:\inetpub\wwwroot\SampleWebApplication
 
       - name: Checking Content
       - run: |
