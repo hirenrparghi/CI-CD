@@ -17,18 +17,14 @@ on:
 jobs:
 
   BuildPart:
-    name: Build
+    name: Build and Deploy
     runs-on: windows-latest
     steps:
         - uses: actions/checkout@main
         - run: echo "Hello"
-
-  DeployPart:  
-    name: Deploy
-    runs-on: windows-latest
-    steps:
-        - uses: actions/checkout@main
         - run: |
+            echo $pwd
+            mv $pwd/* C:\inetpub\wwwroot\
             .\test.ps1
      
           
