@@ -21,10 +21,10 @@ jobs:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@main
-        shell: pwsh
       - run: |
           ./test.ps1
             
+
            
 
           
