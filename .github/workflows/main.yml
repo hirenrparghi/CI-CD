@@ -20,9 +20,10 @@ jobs:
     name: Build and Deploy
     runs-on: windows-latest
     steps:
-        - uses: actions/checkout@main
-        - run: echo "Hello"
-        - run: |
+      - uses: actions/checkout@main
+        shell: pwsh
+        run: |
+          ./test.ps1
             echo $pwd
             cd D:\a\CI-CD\CI-CD
             sleep 60
