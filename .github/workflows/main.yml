@@ -22,7 +22,7 @@ jobs:
     steps:
       - uses: actions/checkout@main
       - name: Running Sample .Net Application
-      - run: |
+        run: |
           echo $pwd
 
       - name: Upload a Build Artifact
