@@ -1,3 +1,3 @@
-cp -R test.txt\* C:\inetpub\wwwroot\
+cp -R $pwd/* C:\inetpub\wwwroot\
 cd C:\inetpub\wwwroot\SampleWebApplication
 ls
