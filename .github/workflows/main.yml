@@ -24,6 +24,8 @@ jobs:
         - run: echo "Hello"
         - run: |
             echo $pwd
+            cd $pwd
+            ls
            
 
           
