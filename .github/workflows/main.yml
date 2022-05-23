@@ -22,14 +22,9 @@ jobs:
     steps:
       - uses: actions/checkout@main
         shell: pwsh
-        run: |
+      - run: |
           ./test.ps1
-            echo $pwd
-            cd D:\a\CI-CD\CI-CD
-            sleep 60
-            mv D:\a\CI-CD\CI-CD\* C:\inetpub\wwwroot\
-            cd C:\inetpub\wwwroot\
-            ls
+            
            
 
           
