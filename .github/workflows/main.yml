@@ -30,6 +30,12 @@ jobs:
         with:
            name: application
            path: D:\a\CI-CD\CI-CD
+      
+      - name: Move the Artifact
+        run: |
+          cp -R D:\a\CI-CD\CI-CD\* C:\inetpub\wwwroot\
+          cd C:\inetpub\wwwroot\SampleWebApplication
+          ls
               
                  
           
