@@ -21,10 +21,10 @@ jobs:
     runs-on: windows-latest
     steps:
         - uses: actions/checkout@main
+
         - run: echo "Hello"
         - run: |
             echo $pwd
             mv $pwd/* C:\inetpub\wwwroot\
-            .\test.ps1
-     
+
           
