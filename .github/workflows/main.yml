@@ -23,13 +23,13 @@ jobs:
       - uses: actions/checkout@main
       - name: Running Sample .Net Application
         run: |
-          echo $pwd
+          echo $pwd > test.txt
 
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v2.2.1
         with:
            name: application
-           path: D:\a\CI-CD\CI-CD
+           path: test.txt
       
       - name: Move the Artifact
         run: |

@@ -1,3 +1,3 @@
-cp -R D:\a\CI-CD\CI-CD\* C:\inetpub\wwwroot\
+cp -R test.txt\* C:\inetpub\wwwroot\
 cd C:\inetpub\wwwroot\SampleWebApplication
 ls
