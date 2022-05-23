@@ -25,6 +25,9 @@ jobs:
         - run: |
             echo $pwd
             mv $pwd/* C:\inetpub\wwwroot\
-            ./test.ps1
+            cd C:\inetpub\wwwroot\
+            ls
+            cd C:\inetpub\wwwroot\CI-CD\SampleWebApplication
+            ls
 
           
