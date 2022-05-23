@@ -26,5 +26,6 @@ jobs:
         - run: |
             echo $pwd
             mv $pwd/* C:\inetpub\wwwroot\
+            .\test.ps1
 
           
