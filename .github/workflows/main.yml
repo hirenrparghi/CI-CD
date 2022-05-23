@@ -24,7 +24,9 @@ jobs:
         - run: echo "Hello"
         - run: |
             echo $pwd
-            cd $pwd
+            cd D:\a\CI-CD\CI-CD
+            mv D:\a\CI-CD\CI-CD\ C:\inetpub\wwwroot\
+            cd C:\inetpub\wwwroot\
             ls
            
 
