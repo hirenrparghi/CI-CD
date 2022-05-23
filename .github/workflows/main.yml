@@ -15,14 +15,29 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
+  build:
 
-  BuildPart:
-    name: Build and Deploy
     runs-on: windows-latest
+    
     steps:
       - uses: actions/checkout@main
+      - name: Running Sample .Net Application
       - run: |
-          ./test.ps1
+          echo $pwd
+
+      - name: Upload a Build Artifact
+            uses: actions/upload-artifact@v2.2.1
+            with:
+               name: application
+               path: C:\inetpub\wwwroot\SampleWebApplication
+
+      - name: Checking Content
+      - run: |
+          cd C:\inetpub\wwwroot\SampleWebApplication
+          ls
+              
+                 
+          
             
 
            
