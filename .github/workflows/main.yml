@@ -21,7 +21,7 @@ jobs:
     
     steps:
       - name: Running Sample .Net Application
-        uses: actions/checkout@main
+      - uses: actions/checkout@main
         run: |
           echo $pwd > test.txt
 
@@ -32,7 +32,6 @@ jobs:
            path: test.txt
       
       - name: Move the Artifact
-        uses: actions/checkout@main
         run: |
           ./test.ps1
               
