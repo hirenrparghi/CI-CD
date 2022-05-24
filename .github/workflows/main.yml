@@ -21,7 +21,7 @@ jobs:
     
     steps:
       - name: Running Sample .Net Application
-      - uses: actions/checkout@main
+        uses: actions/checkout@main
         run: |
           echo $pwd > test.txt
 
