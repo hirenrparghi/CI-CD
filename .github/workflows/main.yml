@@ -21,18 +21,18 @@ jobs:
     
     steps:
       - name: Running Sample .Net Application
-      - uses: actions/checkout@main
+        uses: actions/checkout@main
         run: |
           echo $pwd > test.txt
 
       - name: Upload a Build Artifact
-      - uses: actions/upload-artifact@v2.2.1
+        uses: actions/upload-artifact@v2.2.1
         with:
            name: application
            path: test.txt
       
       - name: Move the Artifact
-      - uses: actions/checkout@main
+        uses: actions/checkout@main
         run: |
           ./test.ps1
               
